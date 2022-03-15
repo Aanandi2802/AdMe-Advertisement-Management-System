@@ -6,7 +6,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <h1 class="display-4"> {{request.user.first_name}}'s Dashboard</h1>
-          <p class="lead">Manage your BS Listings/Inquiries</p>
+          <p class="lead">Manage your BS listings/Inquiries</p>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
           </table>
           {%else%}
           <p>You have not made any inquiries yet</p>
-          <a class='btn btn-primary' href="{% url 'listings'%}">View Listings</a>
+          <a class='btn btn-primary' href="{% url 'listings'%}">View listings</a>
           {%endif%}
         </div>
       </div>
