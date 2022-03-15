@@ -26,7 +26,7 @@ def inquirys(request):
             send_mail(
                 'Inquiry for '+ listing,
                 'There has been an inquiry for '+ listing +'.Sign in to your dashboard for further info',
-                'cristomathew7@gmail.com',
+                'ddusem8@gmail.com',
                 [owner_mail],
                 fail_silently=False
             )

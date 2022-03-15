@@ -54,7 +54,7 @@ def register(request):
                         send_mail(
                             'Account Creation Confirmation',
                             'Hi '+ first_name + ' You Confirmation code is: ' +code,
-                            'cristomathew7@gmail.com',
+                            'ddusem8@gmail.com',
                             [email],
                             fail_silently=False
                         )
@@ -161,7 +161,7 @@ def send_reply(request):
         send_mail(
             'Reply from ' + lisiting + ' owner',
             message,
-            'cristomathew7@gmail.com',
+            'ddusem8@gmail.com',
             [email],
             fail_silently=False
         )
