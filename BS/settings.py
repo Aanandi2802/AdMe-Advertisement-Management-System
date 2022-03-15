@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+
+    'jazzmin',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -151,6 +154,6 @@ EMAIL_HOST_USER = 'ddusem8@gmail.com'
 EMAIL_HOST_PASSWORD = 'pinaaqsoxyjqmdrn'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Default from AMS-Email'
+DEFAULT_FROM_EMAIL = 'Default from Email'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
