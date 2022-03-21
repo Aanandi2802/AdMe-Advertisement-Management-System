@@ -166,7 +166,7 @@ JAZZMIN_SETTINGS = {
     "site_header": "AdMe Admin",
 
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
-    "site_brand": "AdMe"
+    "site_brand": "AdMe",
    
     # Logo to use for your site, must be present in static files, used for brand on top left
     #"site_logo": "books/img/logo.png",
@@ -175,10 +175,10 @@ JAZZMIN_SETTINGS = {
     #"site_logo_classes": "img-circle",
 
     # Welcome text on the login screen
-    #"welcome_sign": "Welcome to the AdMe Admin-Page...",
+    "welcome_sign": "Welcome to the AdMe Admin-Page...",
 
     # Copyright on the footer
-    #"copyright": "Adme- iViewLabs Pvt Ltd"
+    "copyright": "Adme- iViewLabs Pvt Ltd"
 
     
 }
