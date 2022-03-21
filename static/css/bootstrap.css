@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
  :root {
-  --blue: #093463
+  --blue: #000000
 ;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -6711,7 +6711,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #093463
+  background-color: #000000
  !important;
 }
 

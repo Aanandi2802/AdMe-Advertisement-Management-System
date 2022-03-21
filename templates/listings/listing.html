@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load humanize %}
-{% block tiltle %} listings {% endblock %}
+{% block tiltle %} Listings {% endblock %}
 {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
     <div class="container">
@@ -25,7 +25,7 @@
             <a href="{% url 'index' %}">Home</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="{% url 'listings' %}">listings</a>
+            <a href="{% url 'listings' %}">Listings</a>
           </li>
           <li class="breadcrumb-item active">{{listing.title}}</li>
         </ol>
@@ -35,7 +35,7 @@
   <!-- Listing -->
   <section id="listing" class="py-4">
     <div class="container">
-      <a href="{%url 'listings' %}" class="btn btn-light mb-4">Back To listings</a>
+      <a href="{%url 'listings' %}" class="btn btn-light mb-4">Back To Listings</a>
       <div class="row">
         <div class="col-md-9">
           <!-- Home Main Image -->
@@ -144,10 +144,10 @@
               {%csrf_token%}
               {%if favourite%}
                 <input type="hidden" name="favourite_val" value="unfavourite">
-                <button class="btn-danger btn-block btn-lg" type="submit">UnFavourite</button>
+                <button class="btn-danger btn-block btn-lg" type="submit">Unlike</button>
               {%else%}
                 <input type="hidden" name="favourite_val" value="favourite">
-                <button class="btn-success btn-block btn-lg" type="submit">Favourite</button>
+                <button class="btn-success btn-block btn-lg" type="submit">Like</button>
               {%endif%}
             </form>
           {%endif%}

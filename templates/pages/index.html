@@ -8,9 +8,9 @@
         <div class="overlay p-5">
           {% include 'partials/_alerts.html' %}
           <h1 class="display-4 mb-4">
-            Post All your listings Online
+            Post All your Advertisements Online
           </h1>
-          <p class="lead">Here, you can post listings as much as you want and also can see other people's listings!!!!</p>
+          <p class="lead">Here, you can post ads as much as you want and also can see other people's ads!!!!</p>
           <div class="search">
             <form action="{% url 'search' %}">
               <!-- Form Row 1 -->
@@ -77,10 +77,10 @@
     </div>
   </section>
 
-  <!-- listings -->
+  <!-- Listings -->
   <section id="listings" class="py-5">
     <div class="container">
-      <h3 class="text-center mb-3">Latest listings</h3>
+      <h3 class="text-center mb-3">Latest Advertisements</h3>
       <div class="row">
         {% if listings %}
         {% for listing in listings %}
@@ -132,7 +132,7 @@
         {% endfor %}
         {% else %}
         <div class="col-md-12">
-            <p>Currently there are no listings Available</p>
+            <p>Currently there are no Advertisements Available</p>
         </div>
         {%endif%}
       </div>
@@ -148,22 +148,20 @@
         <div class="col-md-4">
           <i class="fas fa-comment fa-4x mr-4"></i>
           <hr>
-          <h3>Consulting Services</h3>
-          <p>Always at your service!!!</p>
+          <h3>Communicate freely!</h3>
+          <p>Throw your enquiries and communicate with your sellers!!</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-home fa-4x mr-4"></i>
           <hr>
-          <h3>Propery Management</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <h3>Find your Propery</h3>
+          <p>Get a view of wide range of properties that are to be sold or rented!!</p>
         </div>
         <div class="col-md-4">
           <i class="fas fa-suitcase fa-4x mr-4"></i>
           <hr>
-          <h3>Renting & Selling</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
+          <h3>View Product Ads</h3>
+          <p>Always at your service!!</p>
         </div>
       </div>
     </div>
