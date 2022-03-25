@@ -4850,6 +4850,10 @@ input[type="button"].btn-block {
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  float: left;
+    width:  550px;
+    height: 350px;
+    object-fit: contain;
 }
 
 .card-img,

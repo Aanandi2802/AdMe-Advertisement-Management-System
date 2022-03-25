@@ -8,7 +8,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <h1 class="display-4"> {{request.user.first_name}}'s Dashboard</h1>
-          <p class="lead">Manage your BS Listings/Inquiries</p>
+          <p class="lead">Manage your AdMe Listings/Inquiries</p>
           {% include 'partials/_alerts.html' %}
 
         </div>
@@ -37,7 +37,7 @@
         <div class="col-md-12">
           <h2>Welcome {{request.user.first_name}} {{request.user.last_name}}</h2>
           {% include 'partials/_dashnav.html'%}
-          <p>Here are your Liked Listings</p>
+          <p>Here are your Liked Listings!</p>
           <hr>
           {% if listings %}
           <table class="table">
@@ -61,7 +61,7 @@
             </tbody>
           </table>
           {%else%}
-          <p>You have not liked any listing </p>
+          <p>You have not liked any listing! </p>
           {%endif%}
         </div>
       </div>

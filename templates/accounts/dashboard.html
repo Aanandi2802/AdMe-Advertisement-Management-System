@@ -8,7 +8,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <h1 class="display-4"> {{request.user.first_name}}'s Dashboard</h1>
-          <p class="lead">Manage Advertisements/Inquiries</p>
+          <p class="lead">Manage your AdMe Listings/Inquiries</p>
           {% include 'partials/_alerts.html' %}
 
         </div>
@@ -37,13 +37,13 @@
         <div class="col-md-12">
           <h2>Welcome {{request.user.first_name}} {{request.user.last_name}}</h2>
           {% include 'partials/_dashnav.html'%}
-          <p>Here are your Inquiries</p>
+          <p>Here are your listings!</p>
           <hr>
           {% if listings %}
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Cateogry</th>
+                <th scope="col">Category</th>
                 <th scope="col">Title</th>
                 <th scope="col"></th>
               </tr>
@@ -68,12 +68,13 @@
             </tbody>
           </table>
           {%else%}
-          <p>You have not created any listings </p>
-          <button class='btn btn-primary'>Create a New Lisitng</button>
+          <p>You have not created any listings! </p>
+          <!-- <button class='btn btn-primary'>Create a New Listing</button> -->
           {%endif%}
         </div>
       </div>
     </div>
   </section>
+  
 
 {%endblock%}
