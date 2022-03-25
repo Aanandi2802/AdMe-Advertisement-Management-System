@@ -4852,7 +4852,7 @@ input[type="button"].btn-block {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   float: left;
-    width:  550px;
+    width:  300px;
     height: 350px;
     object-fit: contain;
 }

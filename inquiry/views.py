@@ -18,14 +18,14 @@ def inquirys(request):
         if request.user.is_authenticated:
             user_id  = request.user.id
             has_inquired = inquiry.objects.all().filter(listing_id=listing_id, user_id=user_id)
-            if has_inquired:
-                messages.error(request, 'You have already made an inquiry for this listing')
-                return redirect('/listings/'+listing_id+'/')
+            #if has_inquired:
+             #   messages.error(request, 'You have already made an inquiry for this listing')
+              #  return redirect('/listings/'+listing_id+'/')
             inquirys1 = inquiry(listing=listing, listing_id=listing_id, name=name, email=email, phone=phone, message=message, user_id=user_id, owner_id=owner_id)
             inquirys1.save()
             send_mail(
                 'Inquiry for '+ listing,
-                'There has been an inquiry for '+ listing +'.Sign in to your dashboard for further info',
+                '\nThere has been an inquiry for '+ listing +'.\nKindly Sign in to your dashboard for further info.',
                 'ddusem8@gmail.com',
                 [owner_mail],
                 fail_silently=False
