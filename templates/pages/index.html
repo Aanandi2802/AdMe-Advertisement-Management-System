@@ -127,7 +127,11 @@
                   <i class="fas fa-clock"></i> {{listing.list_date |timesince}}</div>
               </div>
               <hr>
+              {%if request.user.is_authenticated%}
               <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
+              {%else%}
+              <a href="/accounts/login" class="btn btn-primary btn-block">More Info</a>
+              {%endif%}
           </div>
         </div>
         {% endfor %}
